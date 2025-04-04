@@ -13,6 +13,10 @@ class Settings(BaseSettings):
     workdir: str
     debug: bool = False  # Default to False
     
+    # PDF Processing settings
+    pdf_generate_pdfa: bool = False  # Generate PDF/A variant
+    pdf_pdfa_level: str = "3b"  # PDF/A compliance level: 1b, 2b, 3b
+    
     # Making Dropbox optional
     dropbox_app_key: Optional[str] = None
     dropbox_app_secret: Optional[str] = None

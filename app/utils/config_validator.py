@@ -420,6 +420,10 @@ def get_settings_for_display(show_values=False):
             "redis_url",
             "gotenberg_url"
         ],
+        "PDF Processing": [
+            "pdf_generate_pdfa",
+            "pdf_pdfa_level"
+        ],
         "Authentication": [
             "auth_enabled",
             "authentik_client_id",
